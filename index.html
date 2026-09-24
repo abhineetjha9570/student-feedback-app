@@ -10,28 +10,23 @@
 <body>
 
     <div class="container">
-
         <h1>Student Feedback Form</h1>
 
         <form id="feedbackForm">
 
             <!-- Department -->
             <label for="department">Department</label>
-
             <select id="department" required>
                 <option value="">Select Department</option>
-                <option value="DS">Data Science</option>
-                <option value="CSE">Computer Science & Engineering</option>
-                <option value="IT">Information Technology</option>
-                <option value="ECE">Electronics & Communication Engineering</option>
-                <option value="ME">Mechanical Engineering</option>
-                <option value="CE">Civil Engineering</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="ECE">ECE</option>
+                <option value="Mechanical">Mechanical</option>
             </select>
 
-
-            <!-- Faculty Email -->
-            <label for="facultyEmail">Student Official Email</label>
-
+            <!-- Faculty Official Email -->
+            <label for="facultyEmail">Faculty Official Email</label>
             <input
                 type="email"
                 id="facultyEmail"
@@ -39,10 +34,8 @@
                 required
             >
 
-
             <!-- Student Name -->
             <label for="name">Student Name</label>
-
             <input
                 type="text"
                 id="name"
@@ -50,10 +43,8 @@
                 required
             >
 
-
             <!-- Course -->
             <label for="course">Course</label>
-
             <input
                 type="text"
                 id="course"
@@ -61,34 +52,21 @@
                 required
             >
 
-
             <!-- Feedback -->
             <label for="feedback">Feedback</label>
-
             <textarea
                 id="feedback"
                 placeholder="Enter your feedback"
                 required
             ></textarea>
 
-
-            <!-- Verification Message -->
-            <p id="verificationMessage"></p>
-
-
-            <!-- Submit -->
-            <button type="submit">
-                Submit Feedback
-            </button>
+            <button type="submit">Submit Feedback</button>
 
         </form>
 
-
-        <!-- Result -->
         <div id="result"></div>
 
     </div>
-
 
     <script src="script.js"></script>
 
