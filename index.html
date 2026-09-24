@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Student Feedback Form</h1>
+
+        <form id="feedbackForm">
+
+            <label>Student Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label>Course</label>
+            <input type="text" id="course" placeholder="Enter your course" required>
+
+            <label>Feedback</label>
+            <textarea id="feedback" placeholder="Enter your feedback" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
